@@ -12,8 +12,7 @@ docker buildx build --platform linux/amd64,linux/arm64 -t jscat/ffmpeg:latest --
 ```bash
 docker run --rm -it \
     -v $(pwd):/app -w /app \
-    jscat/ffmpeg -o abema.ts \
-    https://abema.tv/video/episode/26-162_s3_p2 best
+    jscat/ffmpeg --help
 ```
 
 # install docker
